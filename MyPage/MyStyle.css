@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: MyFont;
+    src: url('Lato Heavy.ttf');
+}
+
+.A {
+    min-height: 1000px;
+    width: 100%;
+    background-image: linear-gradient(rgba(40, 41, 44, 0.7), rgba(40, 41, 44, 0.7)), url('banner.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 1% 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Menu {
+    flex: 1;
+    text-align: right;
+}
+
+.Menu ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px 5px;
+    position: relative;
+}
+
+.Menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: MyFont;
+    font-size: 15px;
+}
+
+.Menu ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #fa8f14;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.Menu ul li:hover::after {
+    width: 100%;
+}
+
+.AboutUs {
+    text-align: center;
+    color: #ffffff;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-family: MyFont;
+}
+
+.AboutUs h2 {
+    font-size: 50px;
+}
+
+.AboutUs p {
+    margin: 5px 100px;
+    font-size: 15px;
+}
+
+.Youtube {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.Youtube h2 {
+    font-family: MyFont;
+    font-size: 50px;
+}
+
+.Youtube img {
+    width: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 20%;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+.buttonYT {
+    margin-top: 35px;
+    font-family: MyFont;
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    border: 2px solid #000000;
+    padding: 12px 20px;
+    font-size: 30px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.buttonYT:hover {
+    border: 2px solid #e9653d;
+    background: #e9653d;
+    transition: 0.5s;
+}
+
+nav .fa {
+    display: none;
+}
+
+.TikTok {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.TikTok h2 {
+    font-family: MyFont;
+    font-size: 50px;
+}
+
+.TikTok img {
+    width: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 20%;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+@media only screen and (max-width: 1080px) {
+    .AboutUs h2 {
+        font-size: 100px;
+    }
+
+    .AboutUs p {
+        margin: 5px 100px;
+        font-size: 20px;
+    }
+
+    .Youtube h2 {
+        font-family: MyFont;
+        font-size: 60px;
+    }
+
+    .Youtube img {
+        width: 70%;
+        text-align: center;
+        vertical-align: middle;
+        margin: 15%;
+        margin-top: 5px;
+        margin-bottom: 2px;
+        display: block;
+    }
+
+    .Menu ul li {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 70px;
+        text-align: center;
+    }
+
+    .Menu ul li a {
+        font-size: 30px;
+    }
+
+    .Menu {
+        position: absolute;
+        background: #413c3c;
+        height: 100vh;
+        width: 305px;
+        top: 0;
+        right: -305px;
+        text-align: right;
+        z-index: 2;
+        transition: 0.5s;
+    }
+
+    nav .fa {
+        display: inline-block;
+        color: #ffffff;
+        margin: 10px;
+        font-size: 40px;
+        cursor: pointer;
+
+    }
+}

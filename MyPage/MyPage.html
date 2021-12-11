@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Page</title>
+    <link rel="stylesheet" href="MyStyle.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/360959e844.js"></script>
+
+</head>
+
+<body>
+    <section class="A">
+        <nav>
+            <img src="logo.png" width="150px">
+            <h3 class="Menu" id="Menu">
+                <i class="fa fa-times-circle" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="#AboutUs">ABOUT US</a></li>
+                    <li><a href="#Youtube">YOUTUBE VIDEO</a></li>
+                    <li><a href="#TikTok">TIKTOK VIDEO</a></li>
+                </ul>
+
+            </h3>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="AboutUs">
+            <h2 id="AboutUs">
+                ABOUT US
+            </h2>
+            <p>
+                The Evolution Of Cars là một dự án nhỏ với mục đích tạo ra được sự hứng thú của các bạn trẻ
+                tới lịch sử những chiếc xe ô tô, những giai đoạn phát triển của ngành công nghiệp ô tô, cùng với đó là
+                xu
+                hướng mà ngành công nghiệp tỷ đô này
+                đang hướng đến trong tương lai. Chúng mình hy vọng sẽ giúp các bạn có động lực để đưa ngành công nghiệp
+                ô tô nước nhà vươn đến tầm cỡ quốc tế.
+            </p>
+        </div>
+    </section>
+    <section>
+        <div class="Youtube">
+            <h2 id="Youtube">
+                YOUTUBE CHANNEL
+            </h2>
+            <img src="VideoYoutube.png" alt="youtube channel">
+            <a href="https://www.youtube.com/channel/UCBhq_eAe1MzkW1GA0mgeKaw" class="buttonYT">Youtube Video</a>
+        </div>
+    </section>
+
+    <script>
+        var Menu = document.getElementById("Menu");
+
+        function showMenu() {
+            Menu.style.right = "0";
+        }
+        function hideMenu() {
+            Menu.style.right = "-305px";
+        }
+    </script>
+
+    <section>
+        <div class="TikTok">
+            <h2 id="TikTok">
+                TIKTOK CHANNEL
+            </h2>
+            <img src="Mesa de trabajo 1.png" alt="TikTok channel">
+            <a href="https://www.youtube.com/channel/UCBhq_eAe1MzkW1GA0mgeKaw" class="buttonYT">TikTok Video</a>
+        </div>
+    </section>
+</body>
+
+</html>
